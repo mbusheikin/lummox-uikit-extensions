@@ -21,6 +21,8 @@
 		2748F73818EDDE2300EE12F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2748F6ED18EDD8C800EE12F3 /* UIKit.framework */; };
 		2748F73E18EDDE2300EE12F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2748F73C18EDDE2300EE12F3 /* InfoPlist.strings */; };
 		2748F74918EDDE7000EE12F3 /* LMXUIViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748F74818EDDE7000EE12F3 /* LMXUIViewTests.m */; };
+		2748F78D18EDFCEC00EE12F3 /* UIColor+LMXRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748F78C18EDFCEC00EE12F3 /* UIColor+LMXRandom.m */; };
+		2748F79118EDFD8900EE12F3 /* LXMRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2748F79018EDFD8900EE12F3 /* LXMRandom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,11 @@
 		2748F73D18EDDE2300EE12F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2748F74118EDDE2300EE12F3 /* LummoxUIKitExtensionsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LummoxUIKitExtensionsTests-Prefix.pch"; sourceTree = "<group>"; };
 		2748F74818EDDE7000EE12F3 /* LMXUIViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMXUIViewTests.m; sourceTree = "<group>"; };
+		2748F78B18EDFCEC00EE12F3 /* UIColor+LMXRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LMXRandom.h"; sourceTree = "<group>"; };
+		2748F78C18EDFCEC00EE12F3 /* UIColor+LMXRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LMXRandom.m"; sourceTree = "<group>"; };
+		2748F78E18EDFCFE00EE12F3 /* UIColor+LMXExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+LMXExtensions.h"; sourceTree = "<group>"; };
+		2748F78F18EDFD8900EE12F3 /* LMXRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMXRandom.h; sourceTree = "<group>"; };
+		2748F79018EDFD8900EE12F3 /* LXMRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXMRandom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,11 +143,9 @@
 		2748F71E18EDDA2700EE12F3 /* LummoxUIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				2748F72D18EDDCB300EE12F3 /* UIView+LMXExtensions.h */,
-				2748F72018EDDA5C00EE12F3 /* UIView+LMXPositioning.h */,
-				2748F71F18EDDA5C00EE12F3 /* UIView+LMXPositioning.m */,
-				2748F72E18EDDD2500EE12F3 /* UIView+LMXViewTree.h */,
-				2748F72F18EDDD2500EE12F3 /* UIView+LMXViewTree.m */,
+				2748F79218EDFE3200EE12F3 /* Randomization */,
+				2748F79418EDFE4900EE12F3 /* UIColor */,
+				2748F79318EDFE4000EE12F3 /* UIView */,
 			);
 			path = LummoxUIKitExtensions;
 			sourceTree = "<group>";
@@ -174,6 +179,37 @@
 				2748F74118EDDE2300EE12F3 /* LummoxUIKitExtensionsTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2748F79218EDFE3200EE12F3 /* Randomization */ = {
+			isa = PBXGroup;
+			children = (
+				2748F78F18EDFD8900EE12F3 /* LMXRandom.h */,
+				2748F79018EDFD8900EE12F3 /* LXMRandom.m */,
+			);
+			name = Randomization;
+			sourceTree = "<group>";
+		};
+		2748F79318EDFE4000EE12F3 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				2748F72D18EDDCB300EE12F3 /* UIView+LMXExtensions.h */,
+				2748F72018EDDA5C00EE12F3 /* UIView+LMXPositioning.h */,
+				2748F71F18EDDA5C00EE12F3 /* UIView+LMXPositioning.m */,
+				2748F72E18EDDD2500EE12F3 /* UIView+LMXViewTree.h */,
+				2748F72F18EDDD2500EE12F3 /* UIView+LMXViewTree.m */,
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		2748F79418EDFE4900EE12F3 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				2748F78E18EDFCFE00EE12F3 /* UIColor+LMXExtensions.h */,
+				2748F78B18EDFCEC00EE12F3 /* UIColor+LMXRandom.h */,
+				2748F78C18EDFCEC00EE12F3 /* UIColor+LMXRandom.m */,
+			);
+			name = UIColor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +311,8 @@
 				2748F72818EDDA9700EE12F3 /* LMXAppDelegate.m in Sources */,
 				2748F73018EDDD2500EE12F3 /* UIView+LMXViewTree.m in Sources */,
 				2748F72918EDDA9700EE12F3 /* LMXViewController.m in Sources */,
+				2748F79118EDFD8900EE12F3 /* LXMRandom.m in Sources */,
+				2748F78D18EDFCEC00EE12F3 /* UIColor+LMXRandom.m in Sources */,
 				2748F72118EDDA5C00EE12F3 /* UIView+LMXPositioning.m in Sources */,
 				2748F6F618EDD8C800EE12F3 /* main.m in Sources */,
 			);

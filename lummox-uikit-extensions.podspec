@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage = "https://github.com/mbusheikin/lummox-uikit-extensions"
   s.license = 'MIT'
   s.author = "Michael Busheikin"
-  s.source = { :git => "https://github.com/mbusheikin/lummox-uikit-extensions.git", :tag => "1.0" }
+  s.source = { :git => "https://github.com/mbusheikin/lummox-uikit-extensions.git", :tag => "v1.0" }
   s.platform = :ios
   s.source_files = 'LummoxUIKitExtensions/LummoxUIKitExtensions'
 end

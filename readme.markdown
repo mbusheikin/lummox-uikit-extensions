@@ -29,15 +29,16 @@ Examples
 
 Setup Instructions
 ------------------
-The recommended way is to install via Cocoapods:
+The recommended way is to install via Cocoapods.
+
+It uses a private repo, which you can add to your pods installation like this:
+pod repo add lummox-podrepo https://github.com/mbusheikin/lummox-podrepo.git
 
 Add into your Podfile:
+pod 'lummox-uikit-extensions'
 
-pod 'lummox-uikit-extensions', :git => 'https://github.com/mbusheikin/lummox-uikit-extensions'
-
-And run
-
-pod update
+Then run:
+pod update (or pod install)
 
 
 MIT License
